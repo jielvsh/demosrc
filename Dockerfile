@@ -8,7 +8,7 @@ WORKDIR /usr/share/nginx/html
 EXPOSE 80
 
 # Copy the application source code to the working directory
-COPY . /usr/share/nginx/html
+COPY dist/SLDC-Demo-Web2/ /usr/share/nginx/html
 
 # Define the entry point or command to run the application
 CMD ["nginx", "-g", "daemon off;"]
